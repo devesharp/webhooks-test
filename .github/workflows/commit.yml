@@ -1,7 +1,7 @@
 name: Test Unit
 
 on:
-    push:
+    pull_request:
         types: [assigned]
         branches: 
             - master

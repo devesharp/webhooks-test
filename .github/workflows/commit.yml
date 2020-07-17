@@ -10,4 +10,6 @@ jobs:
       steps:
          -  uses: actions/checkout@v1
 
-         - run: npx @devesharp/ds-releaser -t semantic --nonRoot
+         - run: npm install -g @devesharp/ds-releaser
+
+         - run: ds-releaser -t semantic --nonRoot

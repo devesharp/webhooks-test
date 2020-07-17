@@ -9,3 +9,5 @@ jobs:
 
       steps:
          -  uses: actions/checkout@v1
+
+         - run: npx @devesharp/ds-releaser -t semantic --nonRoot

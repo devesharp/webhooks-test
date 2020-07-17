@@ -14,7 +14,9 @@ jobs:
             uses: actions/setup-node@v1
             with:
                 node-version: '12.x'
-                
+
          - run: npm install -g @devesharp/ds-releaser
 
          - run: ds-releaser -t semantic --nonRoot
+         
+         - run: git push

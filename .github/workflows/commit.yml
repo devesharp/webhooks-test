@@ -1,8 +1,10 @@
 name: Test Unit
 
 on:
-   push:
-        - master
+    push:
+        types: [assigned]
+        branches: 
+            - master
     
 jobs:
    test:

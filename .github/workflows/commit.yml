@@ -2,6 +2,7 @@ name: Test Unit
 
 on:
    push:
+        - master
     
 jobs:
    test:

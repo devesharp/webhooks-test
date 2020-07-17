@@ -18,5 +18,9 @@ jobs:
          - run: npm install -g @devesharp/ds-releaser
 
          - run: ds-releaser -t semantic --nonRoot
-         
-         - run: git push
+
+         -  name: Push changes
+            uses: ad-m/github-push-action@master
+            with:
+                tags: true
+                github_token: ${{ secrets.GITHUB_TOKEN }}

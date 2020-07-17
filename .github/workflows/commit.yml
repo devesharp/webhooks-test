@@ -1,10 +1,7 @@
 name: Test Unit
 
 on:
-    pull_request:
-        types: [assigned]
-        branches: 
-            - master
+    push:
     
 jobs:
    test:

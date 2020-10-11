@@ -12,7 +12,7 @@ jobs:
       steps:
          -  uses: actions/checkout@v1
 
-         -  uses: actions/ds-action-notify@latest
+         -  uses: devesharp/ds-action-notify@v1.0.0
             with:
                MESSAGE: 'Mona the Octocat'
                URL: 'Mona the Octocat'

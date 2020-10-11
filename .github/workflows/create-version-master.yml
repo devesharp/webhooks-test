@@ -11,5 +11,6 @@ jobs:
 
          -  uses: devesharp/ds-action-releaser@master
             with:
-               github_token: ${{ secrets.GITHUB_TOKEN }}
+                type: build
+                github_token: ${{ secrets.GITHUB_TOKEN }}
 

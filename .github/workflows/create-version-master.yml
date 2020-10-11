@@ -11,24 +11,17 @@ jobs:
 
       steps:
          -  uses: actions/checkout@v1
-
-         -  uses: devesharp/ds-action-notify@v1.0.2
+         -  name: Use Node.js
+            uses: actions/setup-node@v1
             with:
-               MESSAGE: 'Mona the Octocat'
-               URL: ${{ secrets.HOST }}
-               TOKEN: ${{ secrets.DS_TOKEN }}
+               node-version: '12.x'
 
-         # -  name: Use Node.js
-         #    uses: actions/setup-node@v1
-         #    with:
-         #       node-version: '12.x'
+         - run: npm install -g @devesharp/ds-releaser
 
-         # - run: npm install -g @devesharp/ds-releaser
+         - run: ds-releaser -t semantic --nonRoot
 
-         # - run: ds-releaser -t semantic --nonRoot
-
-         # -  name: Push changes
-         #    uses: ad-m/github-push-action@master
-         #    with:
-         #        tags: true
-         #        github_token: ${{ secrets.GITHUB_TOKEN }}
+         -  name: Push changes
+            uses: ad-m/github-push-action@master
+            with:
+                tags: true
+                github_token: ${{ secrets.GITHUB_TOKEN }}

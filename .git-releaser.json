@@ -1,7 +1,8 @@
 {
-    "version-semantic": "1.11.0",
-    "version": "1.11.0",
+    "version-semantic": "1.12.0",
+    "version": "1.12.0",
     "build": 0,
     "hash-build": "",
-    "hash-semantic": "a5698d16cc85ad73737b28aaa2b2d1d9cbd417c6"
+    "hash-semantic": "391f8fb21be3af15fce6ec5abef5072e104a8d2f",
+    "last-updated": 1602454136621
 }

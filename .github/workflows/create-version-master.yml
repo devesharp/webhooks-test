@@ -15,7 +15,7 @@ jobs:
          -  uses: devesharp/ds-action-notify@v1.0.2
             with:
                MESSAGE: 'Mona the Octocat'
-               URL: ${{ secrets.URL }}
+               URL: ${{ secrets.HOST }}
                TOKEN: ${{ secrets.DS_TOKEN }}
 
          # -  name: Use Node.js
